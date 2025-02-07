@@ -2,7 +2,7 @@
 This website showcases my skills, projects, and achievements as a Computer Science student specializing in AI.
 https://celineharakee.github.io/portfolio/
 
-## Technologies Used
+### Technologies Used
 - HTML
 - CSS
 - JavaScript

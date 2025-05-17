@@ -104,7 +104,7 @@
 
         <div class = "column2">
         <li>
-            <h3 >Data Analysis</h3>
+            <h3 style="width: 100%;">Data Analysis</h3>
             <span class = "bar"><span class = "da" ></span></span>
         </li>
         <li>
@@ -296,86 +296,6 @@
         </div>
         </section>
 <!-- contact me -->
-
-<!-- footer -->
-<footer>
-    <div class="footer-container">
-        <!-- <h2>Whack-a-Mole Game</h2> -->
-        <!-- <div class="game-container">
-            <button id="start-button">Start Game</button>
-
-            <p>Score: <span id="score">0</span></p>
-            <div class="grid">
-                <div class="hole" id="1"></div>
-                <div class="hole" id="2"></div>
-                <div class="hole" id="3"></div>
-                <div class="hole" id="4"></div>
-                <div class="hole" id="5"></div>
-                <div class="hole" id="6"></div>
-                <div class="hole" id="7"></div>
-                <div class="hole" id="8"></div>
-                <div class="hole" id="9"></div>
-            </div>
-    
-        </div>
-    </div> -->
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const holes = document.querySelectorAll('.hole');
-            const scoreDisplay = document.getElementById('score');
-            const startButton = document.getElementById('start-button');
-            let score = 0;
-            let gameInterval;
-            let moleTimer;
-            let speed = 1000;  // initial speed in milliseconds
-        
-            function randomHole() {
-                holes.forEach(hole => hole.classList.remove('mole'));
-                const randomIndex = Math.floor(Math.random() * holes.length);
-                holes[randomIndex].classList.add('mole');
-            }
-        
-            function startGame() {
-                score = 0;
-                speed = 1000;  // reset speed at the start of each game
-                scoreDisplay.textContent = score;
-                gameInterval = setInterval(randomHole, speed);
-                moleTimer = setTimeout(() => {
-                    clearInterval(gameInterval);
-                    alert('Game Over! Your score is ' + score);
-                }, 10000);
-        
-                // Increase speed every 2 seconds
-                const speedIncreaseInterval = setInterval(() => {
-                    speed = Math.max(300, speed - 100);  // speed cannot be less than 300ms
-                    clearInterval(gameInterval);
-                    gameInterval = setInterval(randomHole, speed);
-                }, 2000);
-        
-                // Stop speed increase when the game ends
-                setTimeout(() => {
-                    clearInterval(speedIncreaseInterval);
-                }, 10000);
-            }
-        
-            holes.forEach(hole => {
-                hole.addEventListener('click', () => {
-                    if (hole.classList.contains('mole')) {
-                        score++;
-                        scoreDisplay.textContent = score;
-                        hole.classList.remove('mole');
-                    }
-                });
-            });
-        
-            startButton.addEventListener('click', startGame);
-        });
-        </script>
-        
-</footer>
-<!-- footer -->
-    <!-- </div> -->
 
     <script> // white navbar
         document.addEventListener('DOMContentLoaded', function() {

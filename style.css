@@ -290,7 +290,7 @@ hr{
     /* width: 1025px; 835px */
     margin: 20px auto;    
     border: none;
-    border-top: 1.45px solid black;
+    border-top: 1.45px solid #2a7221;
     border-radius: 6px;
 }
 
@@ -337,12 +337,12 @@ li{
 }
 
 .python{
-    width: 88%;
+    width: 92%;
     animation: pyhton 3s;
 }
 
 .da{
-    width: 80%;
+    width: 87%;
     animation: css 3s;
 }
 
@@ -380,6 +380,15 @@ li{
     width: 95%;
     animation: network 3s;
 }
+
+.ml{
+    width: 80%;
+}
+
+.git{
+    width: 93%;
+}
+
 .skills{
     /* width: 850px; */
     margin: 60px auto;
@@ -396,6 +405,7 @@ li{
 .row {
     display: flex;
     flex-direction: column;
+    gap: 5px; /*100px*/
 }
 
 .column1 h3, .column2 h3{
@@ -505,6 +515,7 @@ li{
         width: 80%;
         max-width: 1025px;
         margin: 20px auto;
+        color: #2a7221;
     }
 
     .column1 h3, .column2 h3{
@@ -515,6 +526,7 @@ li{
 
     .row {
         flex-direction: column;
+        gap: 30px;
     }
 
     .left{
@@ -528,9 +540,6 @@ li{
     /* .container{
         padding: 1025px;
     } */
-
-   
-
 }
 
 @media (min-width: 1024px) {
@@ -560,6 +569,7 @@ li{
         width: 80%;
         max-width: 1025px;
         margin: 20px auto;
+        color: #2a7221;
     }
 
     .column1 h3, .column2 h3{
@@ -570,6 +580,7 @@ li{
 
     .row {
         flex-direction: row;
+        gap: 100px;
       }
       
    .left{
@@ -580,8 +591,9 @@ li{
     display: none;
    } */
 
+   .column1{
+    margin-left: -84px; /* Adjust this value as needed */
+}
    
 }
 
-
-/*change font size for titles and p cant be the same*/

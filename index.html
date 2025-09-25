@@ -1,324 +1,751 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3Q2DZK1X0"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-Z3Q2DZK1X0');
-    </script>
-    <!-- Google tag (gtag.js) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Celine Al Harake" />
     <title>Celine</title>
     <link rel="stylesheet" href="style.css">
-    <script src="scroll.js"></script>
-    <link rel = "stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></head>
-<body> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
 
-<!-- navbar -->
-    <header class="header">
-        <nav class="navbar menu">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">About Me</a>
-            <a href="#education" class="nav-link">Education</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#contact" class="nav-link">Contact Me</a>
-        </nav>
-    </header>
-<!-- navbar -->
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About Me</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#papers" class="nav-link">Papers</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#papers">Papers</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<!-- balloons -->
-    <div id="home" class="home underlineNav">
+    <!-- Home Section -->
+        <!-- balloons -->
+    <section id="home" class="me">
         <div class="shape-container">
             <div class="bg-shape1 bg-teal opacity-50 bg-blur"></div>
             <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
             <div class="bg-shape1 bg-purple opacity-50 bg-blur"></div>
         </div>
-        <h1>Celine Al Harake</h1>
-    </div>
-<!-- balloons -->
-
-    <div class="content">
-<!-- about me -->
-        <section style="background-color: ; padding-top: 70px; height: 350px;" id="about" class="section underlineNav">
-            <h2>About Me</h2>
-            <p>I'm a 3rd year Computer Science undergraduate at Effat University in Jeddah, Saudi Arabia, specializing in Artificial Intelligence.
-                Driven by a passion for developing my programming skills, I am constantly on the lookout for new discoveries in this dynamic industry.
-                I am particularly fascinated by Web Development, Networking, Data Manipulation and Analysis, as well as Machine Learning, which motivates me to explore cutting-edge technologies and AI-powered solutions.
-            </p>
-        </br>
-            <p>With a strong foundation in Mathematics, particularly Calculus, Trigonometry, and Statistics, I possess quantitative and analytical skills.
-                Beyond academics, I find joy in reading books, getting involved in community service, and creating artistic handicrafts.
-            </p>
-        </br>
-            <p>I look forward to contributing to impactful data-driven projects as a learner and a trainee.</p>
-        </section>
-<!-- about me -->
-
-<!-- education -->
-        <section style="background-color: ; padding-top: 70px; height: 270px;" id="education" class="section underlineNav">
-            <h2>Education</h2> 
-            <h3>Effat University <span class="date">2022 - 2026</span> </h3>
-      
-            <p> Bachelor's Degree in Computer Science, Artificial Intelligence</p>
-      
-            <p>Achieved Effat College of Engineering's Dean's List for the academic years 2022-23 & 2023-24</p>
-        </br>
-        </br>
-        </br>
-            <h3>Cedar International School <span class="date">2018 - 2022</span> </h3>
-        <p>Graduated with a GPA of 3.99/4.0</p>
-        </section>
-<!-- education -->
-
-<!-- skills -->
-        <section style="background-color: ; padding-top: ; height: 270px;" id="skills" class="section underlineNav">
-            <div class = "skills">
-        <h2>Skills</h2>
-    
-    <div class = "row">
-        <div class = "column1">
-            <li>
-                <h3 >HTML & CSS</h3>
-                <span class = "bar"><span class = "html" ></span></span>
-            </li>
-            <li>
-                <h3>JavaScript</h3>
-                <span class = "bar"><span class = "javascript" ></span></span>
-            </li>
-        <li>
-            <h3>Python</h3>
-            <span class = "bar"><span class = "python" ></span></span>
-        </li>
-        <li>
-            <h3>Java</h3>
-            <span class = "bar"><span class = "java" ></span></span>
-        </li>
-        <li>
-            <h3>Swift</h3>
-            <span class = "bar"><span class = "swift" ></span></span>
-        </li>
-        <li>
-            <h3 style="width: 100%;">Machine Learning</h3>
-            <span class = "bar"><span class = "ml" ></span></span>
-        </li>
-    
+         <!-- balloons -->  
+        <div class="section-fade">
+            <div class="me-avatar">
+                <img src="celine.png" alt="Celine Al Harake">
+            </div>
+            <h1 class="me-title">Celine Al Harake</h1>
+            <p class="me-subtitle">Beta version of a future innovator ⋆˙⟡</p>
+            <a href="#about" class="btn-primary">Explore My Portfolio</a>
         </div>
+    </section>
 
-        <div class = "column2">
-        <li>
-            <h3 style="width: 100%;">Data Analysis</h3>
-            <span class = "bar"><span class = "da" ></span></span>
-        </li>
-        <li>
-            <h3>PHP</h3>
-            <span class = "bar"><span class = "php" ></span></span>
-        </li>
-        <li>
-            <h3>C++</h3>
-            <span class = "bar"><span class = "c" ></span></span>
-        </li>
-        <li>
-            <h3>SQL</h3>
-            <span class = "bar"><span class = "sql" ></span></span>
-        </li>
-        <li>
-            <h3>Network</h3>
-            <span class = "bar"><span class = "network" ></span></span>
-        </li>
-        <li>
-            <h3>Git</h3>
-            <span class = "bar"><span class = "git" ></span></span>
-        </li>
-    </div>
-</div>
-    </div>
- <!-- skills -->
+    <!-- About Me Section -->
+    <section id="about" class="section bg-white">
+        <div class="container">
+            <div class="section-fade">
+                <h2 class="title">About Me</h2>
+                <div class="grid grid-2 about-grid">
+                    <div>
+                        <p class="text-lg">
+                            I'm a 4th year Computer Science undergraduate at Effat University in Jeddah, Saudi Arabia, specializing in Artificial Intelligence. 
+                            With a growing focus on Machine and Deep Learning, Data Science, and Intelligent Systems, I'm passionate about building smart solutions that bridge theory with real-world impact.
+                            My curiosity also extends to web development and design, where I like blending functionality with creativity to craft engaging, AI-powered applications.
+                        </p>
+                        <p class="text-lg">
+                            Backed by a strong foundation in mathematics and analytical thinking, I'm eager to apply my skills in data-driven, AI-centric projects that solve meaningful problems and push the boundaries of what's possible.
+                        </p>
+                        <div class="tags">
+                            <span class="badge badge-green-1">Leadership</span>
+                                <span class="badge badge-green-2">Creativity</span>
+                                <span class="badge badge-green-3">Team Collaboration & Communication</span>
+                                <span class="badge badge-green-1">Problem Solving</span>
+                                <span class="badge badge-green-2">Presentation</span>
+                        </div>
+                    </div>
+                    <div class="facts-card">
+                        <h3 class="facts-title">Quick Facts</h3>
+                        <ul class="facts-list">
+                            <li><i class="fa-solid fa-map-pin" style="color: #2a7221;"></i> Based in Jeddah, Saudi Arabia</li>
+                            <li><i class="fa-solid fa-graduation-cap" style="color: #2a7221;"></i> Computer Science Undergraduate</li>
+                            <li><i class="fa-solid fa-cake-candles" style="color: #2a7221;"></i> December 8, 2004 (20)</li>
+                            <li><i class="fa-solid fa-language" style="color: #2a7221;"></i> Arabic, English, French, & German</li>
+                            <li><i class="fa-solid fa-star" style="color: #2a7221;"></i> 15+ Projects Contributed</li>
+                            <li><i class="fa-solid fa-vest" style="color: #2a7221;"></i> 10+ Volunteering Completed</li>
+                            <li><i class="fa-solid fa-book" style="color: #2a7221;"></i> 40+ Books Read</li>
+                            <li><i class="fa-solid fa-music" style="color: #2a7221;"></i><a href="https://open.spotify.com/track/4H5DcBcHSt6ReloheY37Yi?si=7b80811ed44c4285" target="_blank" class="music-link"> A Cold Play by The Kid Laroi </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- projects -->
-        <section style="background-color: ; padding-top: ; height: ;" id="projects" class="section underlineNav">
-            <h2>Projects</h2>
-            <h3>MyPLC: Conceptual AI-Powered Powerline Communication System</h3>
-            <p> An AI-driven application tailored to monitor <b>Powerline Communication</b> networks. 
-                The application provides real-time device monitoring, AI-based threat detection, automated bandwidth optimization, and energy usage tracking. 
-                Developed with a modular architecture, the system integrates machine learning for anomaly detection and features a user-friendly dashboard, role-based access, and secure data handling. 
-                It ensures improved reliability, responsiveness, and control over smart home and industrial PLC environments—bridging the gap between traditional monitoring tools and intelligent, adaptive network protection.
-            </p>
-                
-                <a href="https://github.com/CelineHarakee/MyPLC/tree/main"><i style = "margin-top: 12px;" class = "fa-brands fa-github icon "></i></a>
-        </br>
+    <!-- Education Section -->
+    <section id="education" class="section bg-gray">
+        <div class="container">
+            <div class="section-fade">
+                <h2 class="title">Education</h2>
+                <div class="education-card">
+                    <div class="education-header">
+                        <div>
+                            <h3 class="education-title">Bachelor's Degree in Computer Science, Artificial Intelligence</h3>
+                            <p class="education-school">Effat University</p>
+                            <p class="education-details">- Cumulative GPA: 3.95/4.0</p>
+                            <p class="education-details">- Achieved Effat College of Engineering's Dean's List for the academic years 2022-23 & 2023-24 & 2024-25</p>
+                            <p class="education-details">- Programming Club Co-leader: Led and coordinated club activities.</p>
+                            <p class="education-details">- Authored a research paper accepted for funding by the Deanship of Graduate Studies and Research (DGSR)</p>
+                        </div>
+                        <span class="education-date">2022 - 2026</span>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-header">
+                        <div>
+                            <h3 class="education-title">High School Diploma</h3>
+                            <p class="education-school">Cedar International School</p>
+                            <p class="education-details">- Graduated with a GPA of 3.99/4.0</p>
+                            <p class="education-details">- Consistent honor roll throughout high school, demonstrating academic excellence and dedication.</p>
+                            <p class="education-details">- Class representative 2020 and 2022, serving as a bridge between students and faculty, helping organize class-related matters.</p>
+                        </div>
+                        <span class="education-date">2018 - 2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h3>ChargingZone - PLC Demo</h3>
-            <p> An innovative <b>Raspberry Pi-based</b> system that simulates <b>Powerline Communication</b> by combining physical charging with automatic Wi-Fi onboarding. 
+   <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="section-fade">
+                <h2 class="text-4xl font-bold text-center mb-12 text-black">Experience</h2>
+                <div class="relative">
+                    <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-[#63c132] bg-opacity-30"></div>
+                    
+                    <div class="space-y-12">
+                        <div class="relative flex items-center">
+                            <div class="absolute left-2 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-[#2a7221] rounded-full"></div>
+                            <div class="ml-12 md:ml-0 md:w-1/2 md:pr-8">
+                                <div class="bg-gray-50 rounded-lg p-6">
+                                    <h3 class="text-xl font-semibold text-black">Tech Coordinator - Internship</h3>
+                                    <p class="text-[#2a7221] font-medium">Quantum</p>
+                                    <p class="text-black text-sm mb-3">June 2025 - September 2025</p>
+                                    <p class="text-black">Developed and deployed an AI-powered conversational agent built on n8n, combining workflow automation, RAG, and advanced prompt engineering to deliver contextual, human-like interactions. Designed scalable session management and personalization pipelines, enhancing user engagement, retention, and cross-platform adaptability.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="relative flex items-center md:justify-end">
+                            <div class="absolute left-2 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-[#2e933c] rounded-full"></div>
+                            <div class="ml-12 md:ml-0 md:w-1/2 md:pl-8">
+                                <div class="bg-gray-50 rounded-lg p-6">
+                                    <h3 class="text-xl font-semibold text-black">Tech Coordinator - Part Time</h3>
+                                    <p class="text-[#2e933c] font-medium">Quantum</p>
+                                    <p class="text-black text-sm mb-3">October 2025 - Present</p>
+                                    <p class="text-black">Built responsive web applications and improved user experience. Collaborated with design team to implement pixel-perfect interfaces.</p>
+                                </div>
+                            </div>
+                        </div> -->
+                        
+                        <!-- <div class="relative flex items-center">
+                            <div class="absolute left-2 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-[#63c132] rounded-full"></div>
+                            <div class="ml-12 md:ml-0 md:w-1/2 md:pr-8">
+                                <div class="bg-gray-50 rounded-lg p-6">
+                                    <h3 class="text-xl font-semibold text-black">Junior Developer</h3>
+                                    <p class="text-[#63c132] font-medium">WebSolutions Ltd.</p>
+                                    <p class="text-black text-sm mb-3">2018 - 2019</p>
+                                    <p class="text-black">Developed and maintained client websites using HTML, CSS, JavaScript, and PHP. Gained experience in database design and optimization.</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-gray">
+        <div class="container">
+            <div class="section-fade">
+                <h2 class="title">Skills</h2>
+                <div class="grid grid-2">
+                    <div>
+                        <h3 class="subtitle">AI & Data Science Skills</h3>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Deep Learning (TensorFlow / PyTorch)</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Machine Learning</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Natural Language Processing</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Data Analysis & Visualization (Pandas, Matplotlib, Seaborn)</span>
+                                <span class="skill-percentage">99%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="99"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Computer Vision (OpenCV, CNNs)</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Reinforcement Learning</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Generative AI (LLMs, Prompt Engineering, RAG)</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+                    <div>
+                        <h3 class="subtitle">Programming & Development</h3>
+                        <div class="skill-boxes">
+                            <div class="skill-box js-box">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-box python-box">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-box java-box">
+                                <i class="fa-solid fa-code"></i>
+                                <span>C++</span>
+                            </div>
+                            <div class="skill-box php-box">
+                                <i class="fab fa-php"></i>
+                                <span>PHP</span>
+                            </div>
+                            <div class="skill-box php-box">
+                                <i class="fab fa-swift"></i>
+                                <span>Swift</span>
+                            </div>
+                            <div class="skill-box html-box">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-box css-box">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML/CSS</span>
+                            </div>
+                        </div>
+
+                        <h3 class="subtitle" style="margin-top: 2rem;">Tools & Frameworks</h3>
+                        <div class="skill-boxes">
+                            <div class="skill-box react-box">
+                                <i class="fa-solid fa-database"></i>
+                                <span>SQL</span>
+                            </div>
+                            <div class="skill-box react-box">
+                                <i class="fa-solid fa-database"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-box node-box">
+                                <i class="fa-solid fa-diagram-project"></i>
+                                <span>n8n</span>
+                            </div>
+                            <div class="skill-box git-box">
+                                <i class="fab fa-git"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-box docker-box">
+                                <i class="fab fa-docker"></i>
+                                <span>Docker</span>
+                            </div>
+                            <div class="skill-box aws-box">
+                                <i class="fab fa-aws"></i>
+                                <span>Cloud Platforms</span>
+                            </div>
+                            <div class="skill-box database-box">
+                                <i class="fa-brands fa-linux"></i>
+                                <span>Linux / Bash scripting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-white">
+        <div class="container-lg">
+            <div class="section-fade">
+                <h2 class="title">Projects</h2>
+                <div class="grid grid-3">
+
+                     <!-- <div class="project-card">
+                        <div class="project-image project-image-3">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AI Chatbot</h3>
+                            <p class="project-description">Intelligent chatbot using natural language processing and machine learning.</p>
+                            <div class="project-tags">
+                                <span class="tag tag-green-2">Python</span>
+                                <span class="tag tag-green-1">TensorFlow</span>
+                            </div>
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                    </div> -->
+
+                    <div class="project-card">
+                        <div class="project-image project-image-1">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">MyPLC: Conceptual AI-Powered Powerline Communication System</h3>
+                            <p class="project-description">An AI-driven application tailored to monitor Powerline Communication networks. The application provides real-time device monitoring, AI-based threat detection, automated bandwidth optimization, and energy usage tracking. Developed with a modular architecture, the system integrates machine learning for anomaly detection and features a user-friendly dashboard, role-based access, and secure data handling. It ensures improved reliability, responsiveness, and control over smart home and industrial PLC environments—bridging the gap between traditional monitoring tools and intelligent, adaptive network protection.</p>
+                            <div class="project-tags">
+                                <span class="tag tag-green-1">Software Engineering</span>
+                                <span class="tag tag-green-2">Powerline Communication</span>
+                            </div>
+                            <a href="https://github.com/CelineHarakee/MyPLC/tree/main" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image project-image-2">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">ChargingZone - PLC Demo</h3>
+                            <p class="project-description">An innovative Raspberry Pi-based system that simulates Powerline Communication by combining physical charging with automatic Wi-Fi onboarding. 
                 This project showcases the integration of physical and digital communication layers, echoing the essence of PLC, where data and power are delivered over a single line.
                 When a mobile device is plugged into a power outlet, it triggers the Raspberry Pi to broadcast a hotspot, automatically connecting the user to a captive portal without requiring manual input.
-                It leverages <b>hostapd</b> for wireless AP management, <b>dnsmasq</b> for DNS spoofing, and <b>iptables</b> for network redirection, all pre-configured to auto-start using <b>systemd</b> upon power-up. 
-            </p>
-                
-                <a href="https://github.com/CelineHarakee/ChargingZone-PLC-Demo"><i style = "margin-top: 12px;" class = "fa-brands fa-github icon "></i></a>
-        </br>
+                It leverages hostapd for wireless AP management, dnsmasq for DNS spoofing, and iptables for network redirection, all pre-configured to auto-start using systemd upon power-up. </p>
+                            <div class="project-tags">
+                                <span class="tag tag-green-3">Raspberry Pi</span>
+                                <span class="tag tag-green-1">Powerline Communication</span>
+                            </div>
+                            <a href="https://github.com/CelineHarakee/ChargingZone-PLC-Demo" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image project-image-3">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">IoT Cyber Attack Detection Using ML</h3>
+                            <p class="project-description">An intelligent, AI-powered intrusion detection system designed for securing IoT devices by accurately identifying and classifying a wide range of cyberattacks in real time. Developed in  Python, the system implements a complete machine learning pipeline, including data cleaning, normalization, SMOTE oversampling, and dimensionality reduction using PCA, to enhance model efficiency and reliability. It harnesses the power of traditional and deep learning algorithms, including  Random Forest, SVM, XGBoost  ,  MLP  , and  CNN  . The project highlights advanced model tuning, comparative performance analysis, and neural network design, making it an ideal demonstration of applied machine learning for network security.</p>
+                            <div class="project-tags">
+                                <span class="tag tag-green-2">Python</span>
+                                <span class="tag tag-green-3">Machine Learning</span>
+                                <span class="tag tag-green-1">IoT Devices</span>
+                            </div>
+                            <a href="https://github.com/CelineHarakee/IoT-Cyber-Attack-Detection-Using-ML" class="project-link">View Project →</a>
+                        </div>
+                    </div>
 
-            <h3>IoT Cyber Attack Detection Using ML</h3>
-            <p> An intelligent, AI-powered intrusion detection system designed for securing IoT devices by accurately identifying and classifying a wide range of cyberattacks in real time. 
-                Developed in <b>Python</b>, the system implements a complete <b>machine learning</b> pipeline, including data cleaning, normalization, SMOTE oversampling, and dimensionality reduction using PCA, to enhance model efficiency and reliability. 
-                It harnesses the power of traditional and deep learning algorithms, including <b>Random Forest</b>, <b>SVM</b>, <b>XGBoost</b>, <b>MLP</b>, and <b>CNN</b>.
-                The project highlights advanced model tuning, comparative performance analysis, and neural network design, making it an ideal demonstration of applied machine learning for network security.
-            </p>
-                
-                <a href="https://github.com/CelineHarakee/IoT-Cyber-Attack-Detection-Using-ML"><i style = "margin-top: 12px;" class = "fa-brands fa-github icon "></i></a>
-                <a href="https://sites.google.com/d/1pUn5Tb_4CsuyUCCWaGhZv73hKLQmCKo3/p/15oV1BfjqenaeuQ0BSwqvoPyXyDz-hVdf/edit"><i style = "margin-top: 12px" class="fa-brands fa-google icon "></i></a>
-                <a href="https://www.researchgate.net/publication/391458631_IoT_Cyber_Attack_Detection_Using_Machine_Learning"><i style = "margin-top: 12px" class="fa-solid fa-file-lines icon"></i></a>
-        </br>
+                    <div class="project-card">
+                        <div class="project-image project-image-3">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Numerical Initial Value Problem Solver</h3>
+                            <p class="project-description">A Python-based tool for solving differential equations using numerical methods like Euler, Taylor (2nd order), and Runge-Kutta (6th order). The project uses NumPy for computations and Matplotlib  for visualizing approximations against the exact solution. Each method is implemented from scratch, allowing users to observe accuracy, convergence, and error behavior over different step sizes. The tool supports step-by-step analysis and comparison of methods, making it useful for understanding the practical application of numerical techniques in scientific computing.</p>
+                            <div class="project-tags">
+                                <span class="tag tag-green-2">Numerical Analysis</span>
+                                <span class="tag tag-green-3">Euler's Method</span>
+                                <span class="tag tag-green-1">Taylor's Second Order</span>
+                                <span class="tag tag-green-2">Runge-Kutta 6th Order</span>
+                            </div>
+                            <a href="https://github.com/CelineHarakee/Numerical-IVP-Solvers-Euler-Taylor-RK6" class="project-link">View Project →</a>
+                        </div>
+                    </div>
 
-            <h3>Numerical Initial Value Problem Solver</h3>
-            <p> A <b>Python-based</b> tool for solving differential equations using numerical methods like Euler, Taylor (2nd order), and Runge-Kutta (6th order). 
-                The project uses <b>NumPy</b> for computations and <b>Matplotlib</b> for visualizing approximations against the exact solution. 
-                Each method is implemented from scratch, allowing users to observe accuracy, convergence, and error behavior over different step sizes. 
-                The tool supports step-by-step analysis and comparison of methods, making it useful for understanding the practical application of numerical techniques in scientific computing.
-            </p>
-                
-                <a href="https://github.com/CelineHarakee/Numerical-IVP-Solvers-Euler-Taylor-RK6"><i style = "margin-top: 12px;" class = "fa-brands fa-github icon "></i></a>
-                <a href="https://www.researchgate.net/publication/391596562_Numerical_Solutions_to_an_Initial_Value_Problem_Using_Euler_Taylor_and_Runge-Kutta_6th_Order_Methods"><i style = "margin-top: 12px" class="fa-solid fa-file-lines icon"></i></a>
-        </br>
+                    <div class="project-card">
+                        <div class="project-image project-image-3">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Player Performance Analysis</h3>
+                            <p class="project-description">A tool that uses data science techniques to predict football player performance, specifically the likelihood of a player scoring a goal in upcoming matches. Using Python libraries  like Pandas for data manipulation, Seaborn for visualization, and Scikit-learn for machine learning, the project integrates player statistics, match outcomes, and other external factors into a unified dataset. By applying the Random Forest Regressor algorithm, the model predicts goal-scoring probabilities based on features like age, position, assists, and minutes played. The project also involves data preprocessing, visualization, and evaluation, making it a comprehensive approach to understanding player dynamics in football.</p>
+                            <div class="project-tags">
+                                <span class="tag tag-green-3">Data Science</span>
+                                <span class="tag tag-green-1">Python</span>
+                                <span class="tag tag-green-2">Machine Learning</span>
+                            </div>
+                            <a href="https://github.com/CelineHarakee/Player-Performance-Analysis" class="project-link">View Project →</a>
+                        </div>
+                    </div>
 
-            <h3>Player Performance Analysis</h3>
-            <p> A tool that uses data science techniques to predict football player performance, specifically the likelihood of a player scoring a goal in upcoming matches. 
-                Using <b>Python libraries</b>  like <b>Pandas</b> for data manipulation, <b>Seaborn</b> for visualization, and <b>Scikit-learn</b> for machine learning, the project integrates player statistics, match outcomes, and other external factors into a unified dataset. 
-                By applying the <b>Random Forest Regressor algorithm</b>, the model predicts goal-scoring probabilities based on features like age, position, assists, and minutes played. 
-                The project also involves data preprocessing, visualization, and evaluation, making it a comprehensive approach to understanding player dynamics in football.
-            </p>
-                
-                <a href="https://github.com/CelineHarakee/Player-Performance-Analysis"><i style = "margin-top: 12px;" class = "fa-brands fa-github icon "></i></a>
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7284593772884058112/"><i style = "margin-top: 12px" class="fa-brands fa-linkedin icon "></i></a>
-        </br>
+                    <div class="project-card">
+                        <div class="project-image project-image-3">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Mini Country Network Simulation</h3>
+                            <p class="project-description">A simulated mini-country network in Cisco Packet Tracer, featuring 5 ministries represented by VLANs, each with its own servers, devices, and specialized protocols. The central hub; the Pink House, oversees all operations with a main router providing DHCP services across VLANs on distinct IP addresses. A default DNS server is centralized for all ministries, facilitating seamless communication. Additionally, Access Control Lists (ACLs) are implemented to regulate traffic flow between ministries, web servers, and FTP services. This setup ensures comprehensive interconnectivity between devices, and secure data management throughout the network.</p>
+                            <div class="project-tags">
+                                <span class="tag tag-green-3">Cisco Packet Tracer</span>
+                                <span class="tag tag-green-1">Networking</span>
+                                <span class="tag tag-green-2">VLANs</span>
+                                <span class="tag tag-green-3">ACL</span>
+                            </div>
+                            <a href="https://github.com/CelineHarakee/Mini-Country-Network-Simulation" class="project-link">View Project →</a>
+                        </div>
+                    </div>
 
-            <h3>Mini Country Network Simulation</h3>
-            <p> A simulated mini-country network in <b>Cisco Packet Tracer</b>, featuring 5 ministries represented by VLANs, each with its own servers, devices, and specialized protocols.
-                The central hub; the Pink House, oversees all operations with a main router providing DHCP services across VLANs on distinct IP addresses.
-                A default DNS server is centralized for all ministries, facilitating seamless communication.
-                Additionally, Access Control Lists (ACLs) are implemented to regulate traffic flow between ministries, web servers, and FTP services.
-                This setup ensures comprehensive interconnectivity between devices, and secure data management throughout the network.
-            </p>
+                    <div class="project-card">
+                        <div class="project-image project-image-3">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Music Map</h3>
+                            <p class="project-description">A user-friendly website that allows users to discover top songs and artists from almost every country. Utilizing simple and interactive HTML, CSS, and JavaScript, Music Map offers users a beautiful and seamless experience, in addition to fun quizzes across different genres to test the user's musical knowledge. Music Map also provides a special user zone powered by PHP and SQL. This zone grants full access to the website's database exclusively to admins. Special users can create, update, or delete countries, artists, and songs.</p>
+                            <div class="project-tags">
+                                <span class="tag tag-green-1">Web Development</span>
+                                <span class="tag tag-green-2">HTML</span>
+                                <span class="tag tag-green-3">CSS</span>
+                                <span class="tag tag-green-1">JS</span>
+                                <span class="tag tag-green-2">PHP</span>
+                            </div>
+                            <a href="https://github.com/CelineHarakee/MusicMap/tree/main" class="project-link">View Project →</a>
+                        </div>
+                    </div>
 
-            <a href="https://github.com/CelineHarakee/Mini-Country-Network-Simulation"><i style = "margin-top: 12px" class = "fa-brands fa-github icon "></i></a>
-        </br>
+                    <div class="project-card">
+                        <div class="project-image project-image-3">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Todo List</h3>
+                            <p class="project-description">A simple Java Swing application designed to organize daily tasks by grouping them into categories. Users can create, edit, or delete tasks and categories, choosing from three task types: Deadline Task, Recurring Task, and Simple Task. Each task has a title, due date, and priority level. Tasks must be added to a category to be displayed, and users can mark tasks as completed once finished, providing an efficient way to manage and prioritize activities.</p>
+                            <div class="project-tags">
+                                <span class="tag tag-green-1">Java</span>
+                                <span class="tag tag-green-2">Java Swing</span>
+                                <span class="tag tag-green-3">Object Oriented</span>
+                            </div>
+                            <a href="https://github.com/CelineHarakee/to-do-list" class="project-link">View Project →</a>
+                        </div>
+                    </div>
 
-            <h3>Music Map</h3>
-            <p> A user-friendly website that allows users to discover top songs and artists from almost every country.
-                Utilizing simple and interactive <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>, Music Map offers users a beautiful and seamless experience, in addition to fun quizzes across different genres to test the user's musical knowledge.
-                Music Map also provides a special user zone powered by <b>PHP</b> and <b>SQL</b>.
-                This zone grants full access to the website's database exclusively to admins.
-                Special users can create, update, or delete countries, artists, and songs.
-            </p>
-                
-                <a href="https://github.com/CelineHarakee/MusicMap/tree/main"><i style = "margin-top: 12px;" class = "fa-brands fa-github icon "></i></a>
-                <a href="https://www.linkedin.com/posts/celine-al-harake-7710b1200_proudly-presented-our-music-map-project-at-activity-7193569943450247169-oPpE?utm_source=share&utm_medium=member_desktop"><i style = "margin-top: 12px" class="fa-brands fa-linkedin icon "></i></a>
-        </br>
-
-            <h3>Todo List</h3>
-            <p> A simple <b>Java Swing</b> application designed to organize daily tasks by grouping them into categories.
-                Users can create, edit, or delete tasks and categories, choosing from three task types: Deadline Task, Recurring Task, and Simple Task.
-                Each task has a title, due date, and priority level.
-                Tasks must be added to a category to be displayed, and users can mark tasks as completed once finished, providing an efficient way to manage and prioritize activities.
-            </p>
-
-                <a href="https://github.com/CelineHarakee/to-do-list"><i style = "margin-top: 12px" class = "fa-brands fa-github icon "></i></a>
-        </br>
-
-
-    <hr> 
-
-        <h3 class = "h3-paper">Papers </h3>
-            <h3 style = "padding-top: 13px;">AI-Powered Powerline Communication</h3>
-            <p> This paper examines the integration of Artificial Intelligence into Powerline Communication (PLC) networks to address three core challenges: security vulnerabilities, performance optimization, and real-time monitoring. 
-                It reviews traditional approaches such as encryption and static filtering, and contrasts them with AI-driven solutions like adaptive threat detection, intelligent interference mitigation, and dynamic energy management. 
-                By analyzing recent studies and identifying key gaps, the research demonstrates how AI can transform PLC networks into more secure, efficient, and autonomous systems for modern smart infrastructures.
-            </p>
-            <a href="https://www.researchgate.net/publication/391217469_AI-Powered_Powerline_Communication_PLC"><i style = "margin-top: 12px" class="fa-solid fa-file-lines icon"></i></a>
-        </br>
-            <h3 style = "padding-top: 13px;">Integrating AI and Cybersecurity in Powerline Connections</h3>
-            <p> This paper explores the integration of Artificial Intelligence and Cybersecurity in Powerline Communication (PLC) systems, emphasizing the challenges and solutions arising from their convergence in smart grid and IoT environments. 
-                It examines key vulnerabilities introduced by AI-enabled and cloud-based PLC architectures, such as electromagnetic interference, physical access risks, and evolving cyber threats. 
-                The study reviews both traditional defenses and advanced techniques, including AI-driven anomaly detection and post-quantum cryptography, to secure data integrity, confidentiality, and availability. 
-                By analyzing current research and proposing an adaptive security framework, the paper underscores the critical role of intelligent, resilient protections for safeguarding next-generation PLC networks in critical infrastructure.
-            </p>
-            <a href="https://www.researchgate.net/publication/391596817_Integrating_AI_and_Cybersecurity_in_Powerline_Connections"><i style = "margin-top: 12px" class="fa-solid fa-file-lines icon"></i></a>
-        </br>
-            <h3 style = "padding-top: 13px;">Navigating the Future of Cybersecurity in the Age of Quantum Computing</h3>
-            <p> This paper examines the impact of quantum computing on cybersecurity, highlighting its ability to break widely-used encryption methods like RSA and ECC with quantum algorithms. 
-                It explores solutions such as post-quantum cryptography, quantum key distribution, and hybrid models to safeguard sensitive information. 
-                The research discusses ongoing challenges, global efforts, and the importance of transitioning to quantum-resistant systems to protect data and ensure secure digital communications in the quantum era.
-            </p>
-            <a href="https://www.researchgate.net/publication/387533298_The_Quantum_Frontier_Navigating_the_Future_of_Cybersecurity_in_the_Age_of_Quantum_Computing"><i style = "margin-top: 12px" class="fa-solid fa-file-lines icon"></i></a>
-        </br>
-        <h3 style = "padding-top: 13px;">Exploring AI in Medical Imaging and Diagnosis</h3>
-            <p> This paper examines the integration of Artificial Intelligence in medical diagnostics, focusing on early disease detection and diagnostic accuracy through AI-driven systems. 
-                It highlights the use of multiple imaging modalities and deep learning models, addressing challenges in clinical workflows and emphasizing the need for standardized protocols and ethical considerations to enhance healthcare efficiency and patient care.
-            </p>
-            <a href="https://www.researchgate.net/publication/387602712_Exploring_AI_in_Medical_Imaging_and_Diagnosis"><i style = "margin-top: 12px" class="fa-solid fa-file-lines icon"></i></a>
-        </br>
-            <h3 style = "padding-top: 13px;">AI Driven Virtual Environments</h3>
-            <p> This paper examines the convergence of Artificial Intelligence and virtual environments, highlighting both the possibilities and challenges.
-                It investigates the potential applications of AI-powered virtual environments across various fields, including education, healthcare, and social interaction, while emphasizing the importance of responsible development to safeguard human well-being and ethical standards.
-                Through surveys and interviews, the study uncovers user excitement about these advancements, alongside concerns about social isolation and mental health impacts.
-                The research advocates for clear guidelines, educational programs, and strong security measures to ensure safe and ethical use of AI in virtual environments, aiming to enhance lives and promote societal progress.
-            </p>
-            <a href="https://www.researchgate.net/publication/380971947_AI_Driven_Virtual_Environments"><i style = "margin-top: 12px" class="fa-solid fa-file-lines icon"></i></a>
-        </br>
-            <h3 style = "margin-top: 15px" >Revolutionizing Round Robin: Dynamic Time Quantum Scheduling for CPU Efficiency</h3>
-            <p> This paper examines Round Robin (RR) scheduling, a long-standing method in operating systems for allocating CPU time slices to processes fairly.
-                While widely used, RR scheduling faces inefficiencies due to its fixed time allocation per process, regardless of varying computational needs.
-                The paper explores innovative approaches to dynamically adjust time allocations based on process behavior, aiming to improve overall system efficiency.
-                By addressing these challenges, the research seeks to optimize process management in operating systems for enhanced performance and resource utilization.
-            </p>
-            <a href="https://www.researchgate.net/publication/380971608_Revolutionizing_Round_Robin_Dynamic_Time_Quantum_Scheduling_for_CPU_Efficiency"><i style = "margin-top: 12px" class="fa-solid fa-file-lines icon"></i></a>
-        </section>
-<!-- projects -->
-
-<!-- contact me -->
-        <section style="background-color: ; padding-top: 80px; height: 270px;" id="contact" class="section underlineNav">
-            <h2>Contact Me</h2>
-
-        <div class="container">
-            <div class="left">
-                <ul><a href="tel: +966580583048"><i class="fa-solid fa-phone icon"></i></a><span class="text">+966 58 058 3048</span></ul>
-                <br>
-                <ul><a href="mailto:celine.harake04@gmail.com"><i class="fa-solid fa-envelope icon"></i></a><span class="text">celine.harake04@gmail.com</span></ul>
-                <br>
-                <ul><a href="https://drive.google.com/file/d/1cVmtSsolmubzaY62PLz7jv9d3jJW9_ZR/view?usp=share_link"><i class="bi bi-file-earmark-person-fill icon"></i></a><span class="text"> CV</span></ul>
+                </div>
             </div>
-            
-            <div class="right">
-                <ul><a href="https://www.researchgate.net/profile/Celine-Al-Harake"><i class="fa-brands fa-researchgate icon"></i></a><span class="text">Celine Al Harake</span></ul>
-                <br>
-                <ul><a href="https://github.com/CelineHarakee"><i class="fa-brands fa-github icon"></i></a><span class="text">CelineHarakee</span></ul>
-                <br>
-                <ul><a href="https://www.linkedin.com/in/celine-al-harake-7710b1200/"><i class="fa-brands fa-linkedin icon"></i></a><span class="text">Celine Al Harake</span></ul>
-            </div>
-            
         </div>
-        </section>
-<!-- contact me -->
+    </section>
 
-    <script> // white navbar
-        document.addEventListener('DOMContentLoaded', function() {
-    const header = document.querySelector('.header');
+    <!-- Papers Section -->
+    <section id="papers" class="section bg-gray">
+        <div class="container">
+            <div class="section-fade">
+                <h2 class="title">Research Papers</h2>
+                <div class="paper-card">
+                    <h3 class="paper-title">AI-Powered Powerline Communication</h3>
+                    <p class="paper-description">This paper examines the integration of Artificial Intelligence into Powerline Communication (PLC) networks to address three core challenges: security vulnerabilities, performance optimization, and real-time monitoring. It reviews traditional approaches such as encryption and static filtering, and contrasts them with AI-driven solutions like adaptive threat detection, intelligent interference mitigation, and dynamic energy management. By analyzing recent studies and identifying key gaps, the research demonstrates how AI can transform PLC networks into more secure, efficient, and autonomous systems for modern smart infrastructures.</p>
+                    <div class="paper-footer">
+                        <div class="paper-tags">
+                            <span class="tag tag-green-1">Machine Learning</span>
+                            <span class="tag tag-green-2">Network Security</span>
+                            <span class="tag tag-green-3">Powerline Communication</span>
+                        </div>
+                        <a href="https://www.researchgate.net/publication/391217469_AI-Powered_Powerline_Communication_PLC" class="paper-link">Read Paper →</a>
+                    </div>
+                </div>
+                
+                <div class="paper-card">
+                    <h3 class="paper-title">Integrating AI and Cybersecurity in Powerline Connections</h3>
+                    <p class="paper-description">This paper explores the integration of Artificial Intelligence and Cybersecurity in Powerline Communication (PLC) systems, emphasizing the challenges and solutions arising from their convergence in smart grid and IoT environments. It examines key vulnerabilities introduced by AI-enabled and cloud-based PLC architectures, such as electromagnetic interference, physical access risks, and evolving cyber threats. The study reviews both traditional defenses and advanced techniques, including AI-driven anomaly detection and post-quantum cryptography, to secure data integrity, confidentiality, and availability. By analyzing current research and proposing an adaptive security framework, the paper underscores the critical role of intelligent, resilient protections for safeguarding next-generation PLC networks in critical infrastructure.</p>
+                    <div class="paper-footer">
+                        <div class="paper-tags">
+                            <span class="tag tag-green-1">Cyber Security</span>
+                            <span class="tag tag-green-2">Machine Learning</span>
+                            <span class="tag tag-green-3">Powerline Communication</span>
+                        </div>
+                        <a href="https://www.researchgate.net/publication/391596817_Integrating_AI_and_Cybersecurity_in_Powerline_Connections" class="paper-link">Read Paper →</a>
+                    </div>
+                </div>
+                
+                <div class="paper-card">
+                    <h3 class="paper-title">Navigating the Future of Cybersecurity in the Age of Quantum Computing</h3>
+                    <p class="paper-description">This paper examines the impact of quantum computing on cybersecurity, highlighting its ability to break widely-used encryption methods like RSA and ECC with quantum algorithms. It explores solutions such as post-quantum cryptography, quantum key distribution, and hybrid models to safeguard sensitive information. The research discusses ongoing challenges, global efforts, and the importance of transitioning to quantum-resistant systems to protect data and ensure secure digital communications in the quantum era.</p>
+                    <div class="paper-footer">
+                        <div class="paper-tags">
+                            <span class="tag tag-green-1">Cyber Security</span>
+                            <span class="tag tag-green-2">IBM</span>
+                            <span class="tag tag-green-3">Quantum Computing</span>
+                        </div>
+                        <a href="https://www.researchgate.net/publication/387533298_The_Quantum_Frontier_Navigating_the_Future_of_Cybersecurity_in_the_Age_of_Quantum_Computing" class="paper-link">Read Paper →</a>
+                    </div>
+                </div>
+                <div class="paper-card">
+                    <h3 class="paper-title">Exploring AI in Medical Imaging and Diagnosis</h3>
+                    <p class="paper-description">This paper examines the integration of Artificial Intelligence in medical diagnostics, focusing on early disease detection and diagnostic accuracy through AI-driven systems. It highlights the use of multiple imaging modalities and deep learning models, addressing challenges in clinical workflows and emphasizing the need for standardized protocols and ethical considerations to enhance healthcare efficiency and patient care.</p>
+                    <div class="paper-footer">
+                        <div class="paper-tags">
+                            <span class="tag tag-green-1">Artificial Intelligence</span>
+                            <span class="tag tag-green-2">Health</span>
+                            <span class="tag tag-green-3">Medical Imaging</span>
+                        </div>
+                        <a href="https://www.researchgate.net/publication/387602712_Exploring_AI_in_Medical_Imaging_and_Diagnosis" class="paper-link">Read Paper →</a>
+                    </div>
+                </div>
+                <div class="paper-card">
+                    <h3 class="paper-title">AI Driven Virtual Environments</h3>
+                    <p class="paper-description">This paper examines the convergence of Artificial Intelligence and virtual environments, highlighting both the possibilities and challenges. It investigates the potential applications of AI-powered virtual environments across various fields, including education, healthcare, and social interaction, while emphasizing the importance of responsible development to safeguard human well-being and ethical standards. Through surveys and interviews, the study uncovers user excitement about these advancements, alongside concerns about social isolation and mental health impacts. The research advocates for clear guidelines, educational programs, and strong security measures to ensure safe and ethical use of AI in virtual environments, aiming to enhance lives and promote societal progress.</p>
+                    <div class="paper-footer">
+                        <div class="paper-tags">
+                            <span class="tag tag-green-1">Artificial Intelligence</span>
+                            <span class="tag tag-green-2">Virtual Environments</span>
+                            <span class="tag tag-green-3">AR/VR</span>
+                        </div>
+                        <a href="https://www.researchgate.net/publication/380971947_AI_Driven_Virtual_Environments" class="paper-link">Read Paper →</a>
+                    </div>
+                </div>
+                <div class="paper-card">
+                    <h3 class="paper-title">Revolutionizing Round Robin: Dynamic Time Quantum Scheduling for CPU Efficiency</h3>
+                    <p class="paper-description">This paper examines Round Robin (RR) scheduling, a long-standing method in operating systems for allocating CPU time slices to processes fairly. While widely used, RR scheduling faces inefficiencies due to its fixed time allocation per process, regardless of varying computational needs. The paper explores innovative approaches to dynamically adjust time allocations based on process behavior, aiming to improve overall system efficiency. By addressing these challenges, the research seeks to optimize process management in operating systems for enhanced performance and resource utilization.</p>
+                    <div class="paper-footer">
+                        <div class="paper-tags">
+                            <span class="tag tag-green-1">Operating Systems</span>
+                            <span class="tag tag-green-2">Round Robin</span>
+                        </div>
+                        <a href="https://www.researchgate.net/publication/380971608_Revolutionizing_Round_Robin_Dynamic_Time_Quantum_Scheduling_for_CPU_Efficiency" class="paper-link">Read Paper →</a>
+                    </div>
+                </div>
+                <!-- <div class="paper-card">
+                    <h3 class="paper-title">xx</h3>
+                    <p class="paper-journal">xx</p>
+                    <p class="paper-description">xx</p>
+                    <div class="paper-footer">
+                        <div class="paper-tags">
+                            <span class="tag tag-green-1">xx</span>
+                            <span class="tag tag-green-3">xx</span>
+                        </div>
+                        <a href="#" class="paper-link">Read Paper →</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
 
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 0) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-white">
+        <div class="container">
+            <div class="section-fade">
+                <h2 class="title">Contact Me</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon contact-icon-1">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4><b>Email</b></h4>
+                            <p><a href="mailto:celine.harake04@gmail.com">celine.harake04@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon contact-icon-2">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4><b>GitHub</b></h4>
+                            <p><a href="https://github.com/CelineHarakee">github.com/CelineHarakee</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon contact-icon-2">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4><b>Phone</b></h4>
+                            <p><a href="tel:+966580583048">+966 58 058 3048</a></p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="contact-item">
+                        <div class="contact-icon contact-icon-1">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4><b>LinkedIn</b></h4>
+                            <p><a href="https://www.linkedin.com/in/celine-al-harake-7710b1200/">linkedin.com/in/celine-al-harake</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon contact-icon-3">
+                            <i class="fa-solid fa-file-pdf"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4><b>CV</b></h4>
+                            <p><a href="https://drive.google.com/file/d/1cVmtSsolmubzaY62PLz7jv9d3jJW9_ZR/view?usp=share_link">Personal Resume</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon contact-icon-3">
+                            <i class="fa-brands fa-researchgate"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4><b>ResearchGate</b></h4>
+                            <p><a href="https://www.researchgate.net/profile/Celine-Al-Harake" >researchgate.net/Celine-Al-Harake</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 8/2025 Celine Al Harake All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            if (mobileMenu.style.display === 'flex') {
+                mobileMenu.style.display = 'none';
+            } else {
+                mobileMenu.style.display = 'flex';
+            }
+        });
+
+        // Smooth scrolling and active nav links
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section');
+
+        function updateActiveNav() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
         }
-    });
-});
+
+        window.addEventListener('scroll', updateActiveNav);
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Animate skill bars when skills section is visible
+                    if (entry.target.closest('#skills')) {
+                        const skillBars = entry.target.querySelectorAll('.skill-progress');
+                        skillBars.forEach(bar => {
+                            const width = bar.getAttribute('data-width');
+                            setTimeout(() => {
+                                bar.style.width = width + '%';
+                            }, 200);
+                        });
+                    }
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section-fade').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Contact form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            const messageDiv = document.getElementById('form-message');
+            const messageParagraph = messageDiv.querySelector('p');
+            
+            // Show success message
+            messageDiv.className = 'form-message success';
+            messageDiv.style.display = 'block';
+            messageParagraph.textContent = 'Thank you for your message! I\'ll get back to you soon.';
+            
+            // Reset form
+            event.target.reset();
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                messageDiv.style.display = 'none';
+            }, 5000);
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.style.display = 'none';
+            });
+        });
     </script>
-</body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9718c51174bf3f39',t:'MTc1NTU5NzI2OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>

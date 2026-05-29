@@ -1,6 +1,7 @@
 ## Personal Portfolio 
 This website showcases my skills, projects, and achievements as a Computer Science student specializing in AI.
-https://celineharakee.github.io/portfolio/
+</br>
+[My Amazing Portfolio :)]([https://pages.github.com/](https://celineharakee.github.io/portfolio/)
 
 ### Technologies Used
 - HTML

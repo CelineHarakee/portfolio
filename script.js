@@ -280,7 +280,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
             node.addEventListener('mouseenter', () => { hoveredNodeId = item.id; updateHighlights(); });
             node.addEventListener('mouseleave', () => { hoveredNodeId = null; updateHighlights(); });
-            node.addEventListener('click', () => { activeNodeId = item.id; updateHighlights(); updateDetailsPanel(item); });
+            node.addEventListener('click', () => { 
+                activeNodeId = item.id; 
+                updateHighlights(); 
+                updateDetailsPanel(item); 
+                
+                // Auto-scroll to details panel on mobile
+                if (window.innerWidth < 1024) {
+                    const detailsPanel = document.getElementById('details-panel');
+                    if (detailsPanel) {
+                        const yOffset = -80; // Offset for fixed navbar
+                        const y = detailsPanel.getBoundingClientRect().top + window.scrollY + yOffset;
+                        window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                }
+            });
 
             nodeElements[item.id] = node;
             
